@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+      content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet"
+        href="style.css">
+        <br>
+        <br>
+<title>My Landing Page</title>
+    </head>
+    <body>
+      <nav>
+<ul>
+<li>
+<a href="#Home">Home</a></li>
+<li>
+<a href="#Services">Our Services</a></li>
+<li>
+<a href="#Our Menu">Menu</a></li>
+<li>
+  <a href="#Contact">Contact Info</a></li>
+</ul>
+</nav>
+<br>
+<h1 id="Home">STEM Degrees/Diplomas University Applications Digital CyberCafe</h1>
+<br>
+<p>
+By Choosing Science, Technology, Engineering, and Mathematics
+Degree/Diploma, you'll be putting yourself on the path to a 
+successful future. In today's economy and demand for STEM Graduates,
+there are countless opportunities, high salaries and job satisfaction.
+So, if you're looking for a degree that will set up for success, STEM
+is the way to do. </p>
+<br>
+<p>
+Learn more on
+<a href="https://www.researchgate.net/publication/264457053_What_is_STEM_education_and_why_is_it_important">
+Researchgate </a>
+</p>
+<br>
+<br>
+<br>
+<br>
+<img src="https://olc-wordpress-assets.s3.amazonaws.com/uploads/2019/11/STEM.jpg"
+alt=""
+width="550"/> <br>
+<button>Apply with us</button><br>
+<form>
+<input type="email"
+placeholder="Please enter your email address for application query">
+<button type="button"
+onclick="validateEmail()">Submit
+</button>
+</form>
+  <section id="Our Menu">
+    <h2>Menu</h2>
+<p> Career guidance & Advices
+<br>Top 20 Universities in SA for STEM qualifications<br>
+Networking opportunities
+</p>
+  </section>
+<br>
+<section>
+  <section id="Services">
+    <h2>Our Services</h2>
+<p>Welcome to Precious Digital Cybercafe! We're passionate about helping Students/Candidates
+  with University applications for STEM Degrees/Diplomas to succeed in their career.
+  We believe that everyone should have access to the best support to 
+  to achieve their goals. We look forward to helping!
+ For more, contact us.</p> 
+</section>
+<section id="Contact">
+<h2>Contact Info</h2>
+<p>
+  Contact No: +27649790076</p>
+<p>
+LinkedIn: <a href="https://za.linkedin.com/in/nomzamo-precious-dhlamini-52a7bb29b">
+  Nomzamo Precious Dhlamini</a>
+</p>
+<p>
+Facebook: <a href="https://www.facebook.com/ndreii.ndreii.50?mibextid=LQQJ4d">
+  Nomzamo Sibalkhulu</a>
+</p>
+<p>
+  Instagram: <a href="https://www.instagram.com/masibalkhulu_11?igsh=aXp4MjgxdjVzYnE1&utm_source=qr">
+    masibalkhulu_11</a>
+</p>
+</section>
+<button onclick="openModal('terms')">Terms & Conditions</button>
+    <button onclick="openModal('faq')">FAQ</button>
+    <button onclick="openModal('pricing')">Pricing Packages</button>
+    <div id="termsModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('terms')">&times;</span>
+            <h2>Terms and Conditions</h2>
+            <ul>
+                <li>Introduction and Acceptance of Terms <br>
+Welcome to Precious Digital Cafe (“the Website") By accessing or using the Website, 
+you agree to be bound by these Terms and Conditions, as well as our Privacy Policy.
+ If you do not agree to these Terms and Conditions, please refrain from using the Website.</li>
+                <li>Use of Services <br>
+The Website provides services including but not limited to career advice, university application assistance,
+ and networking opportunities related to STEM degrees and diplomas. By utilizing these services, you agree to 
+ comply with all applicable laws and regulations.</li>
+                <li>User Accounts <br>
+To access certain features of the Website, you may be required to create a user account. 
+You are responsible for maintaining the confidentiality of your account credentials and for all activities 
+that occur under your account. Please notify us immediately of any unauthorized use of your account.</li>
+          </ul>
+        </div>
+    </div>
+
+    <div id="faqModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('faq')">&times;</span>
+            <h2>FAQ</h2>
+            <ul>
+              <li><strong>What services does Precious Digital Cafe offer?:</strong> 
+                Precious Digital Cafe offers a range of services to assist individuals
+                 pursuing STEM degrees and diplomas, including career advice, university 
+                 application assistance, job postings, and networking opportunities.</li>
+                 <br>
+              <li><strong>How can Precious Digital Cafe help me with my university applications?:</strong> 
+                Our team of experts is dedicated to helping you navigate the university application process
+                for STEM degrees and diplomas. We provide personalized guidance, resources, and support to help
+                you submit competitive applications to SA universities.</li>
+                <br>
+              <li><strong>Can I submit my own content or articles to Precious Digital Cafe?:</strong>
+                We welcome contributions from members of the STEM community who wish to share their knowledge,
+                experiences, or insights with our audience. If you're interested in submitting content for 
+                publication on our platform, please contact us for more information on our submission guidelines 
+                and review process.</li>              
+          </ul>
+      </div>
+  </div>
+
+  <div id="pricingModal" class="modal" style="display: none;">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('pricing')">&times;</span>
+          <h2>Pricing Packages Options</h2>
+          <ul>
+            <li>University Prospectus: For FREE</li>
+            <li>Career Guidance and Advices: For Free</li>
+            <li>Applications: <br>5 Universities(R120)<br>
+                             10 Universities(R240)<br>
+15 Universities(R350)<br>
+20 Universities(R450)
+            </li>
+            
+        </ul>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<footer>Coded by 
+ <a href="https://github.com/NomzamoPrecious/Front-End-dev.git">
+Precious
+ </a>   
+</footer>
+<script>
+function validateEmail() {
+var email=document.querySelector("input[type='email']").value;
+if (email==="") {
+alert("Please enter your email address for application quiry.");}
+else {
+alert("Thank you, we will be in touch soon!");}
+}
+function openModal(modalId) {
+            // Close all modals first
+            var modals = document.getElementsByClassName('modal');
+            for (var i = 0; i < modals.length; i++) {
+                modals[i].style.display = 'none';
+            }
+            
+            // Open the selected modal
+            var modal = document.getElementById(modalId + 'Modal');
+            modal.style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId + 'Modal');
+            modal.style.display = 'none';
+        }
+</script>
+ </body>   
+</html>

@@ -1,0 +1,66 @@
+h1 {
+text-align: center;
+color: navy;
+font-size: 35px;
+padding: 0%;
+}
+h2 {
+text-align:left;
+color: blueviolet;
+text-align: center;
+padding: 5%;
+}
+p {
+font-size: x-large;
+line-height: 1.5;
+color: black;
+padding: 1%;
+font-weight: 500;
+}
+button {
+width: 20%;
+background: rgb(175, 134, 212);
+color: black;
+font-weight: bolder;
+padding: 7px;
+border-radius: 30px;
+}
+img {
+width: 30%;
+border-radius: 10px;
+}
+body {
+    position: relative;
+    overflow: auto;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/premium-photo/laptop-computer-with-white-background-home-office-business-office-concept_55099-127.jpg?w=740);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(7px);
+    z-index: -1;}
+    nav { background-color: rgba(133, 113, 206, 0.5); 
+        padding: 10px; 
+        text-align: center;
+    } nav ul { 
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0; } 
+        nav ul li { 
+            display: inline; 
+            margin-right: 20px; 
+        } 
+        nav ul li:last-child { 
+            margin-right: 0;
+         } 
+         nav ul li a { 
+            text-decoration: none; 
+            color: red; 
+            font-weight: bold;
+        }
